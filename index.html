@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarek Monwar's Science World | Foundation</title>
+  <meta name="description" content="Tarek Monwar's Science World - বিজ্ঞান অলিম্পিয়াড, প্রজেক্ট, গবেষণা ও AI সহায়তায় পরিচালিত ফাউন্ডেশন।" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="images/logo.png" alt="Logo" class="loader-logo" />
+      <div class="spinner"></div>
+      <p>Tarek Monwar's Science World</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="TMSW Logo" />
+        <span>TMSW</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+        <li><a href="#gallery">গ্যালারি</a></li>
+        <li><a href="#publications">প্রকাশনা</a></li>
+        <li><a href="#notices">নোটিশ</a></li>
+        <li><a href="#ai">AI সহায়ক</a></li>
+        <li><a href="#quiz">কুইজ</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+      <div class="nav-auth">
+        <button id="loginBtn" class="btn-outline">লগইন</button>
+        <button id="signupBtn" class="btn-primary">সাইন আপ</button>
+        <div id="userMenu" class="user-menu hidden">
+          <img src="images/president.png" alt="User" id="userAvatar" />
+          <span id="userName">User</span>
+          <button id="logoutBtn" title="লগআউট"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <img src="images/badge.jpg" alt="Tarek Monwar's Science World" class="hero-badge" />
+      <h1>Tarek Monwar's <span>Science World</span></h1>
+      <p class="hero-tagline">বিজ্ঞানের আলোয় ভবিষ্যৎ গড়ি • অলিম্পিয়াড • প্রজেক্ট • গবেষণা • AI</p>
+      <div class="hero-buttons">
+        <a href="#ai" class="btn-primary"><i class="fas fa-robot"></i> AI সহায়ক চালু করুন</a>
+        <a href="#quiz" class="btn-outline"><i class="fas fa-trophy"></i> কুইজে অংশ নিন</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">আমাদের সম্পর্কে</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Tarek Monwar's Science World Foundation</h3>
+          <p>
+            Tarek Monwar's Science World হলো একটি অলাভজনক ফাউন্ডেশন যা বাংলাদেশের তরুণ প্রজন্মকে বিজ্ঞান, প্রযুক্তি ও গবেষণার প্রতি আগ্রহী করে তোলার লক্ষ্যে কাজ করে। 
+            আমাদের মূল উদ্দেশ্য হলো বিজ্ঞান অলিম্পিয়াড, প্রজেক্ট ভিত্তিক শিক্ষা, গবেষণা সহায়তা এবং AI-এর মাধ্যমে বিজ্ঞান শিক্ষাকে সবার কাছে পৌঁছে দেওয়া।
+          </p>
+          <p>
+            এই প্ল্যাটফর্মের মাধ্যমে শিক্ষার্থীরা বিভিন্ন বিষয়ে প্রশ্ন করতে পারবে, অলিম্পিয়াড প্রস্তুতি নিতে পারবে, কুইজে অংশ নিতে পারবে এবং নিজেদের প্রজেক্ট শেয়ার করতে পারবে।
+          </p>
+          <div class="founder-card">
+            <img src="images/president.png" alt="Tarek Monwar Saniyat" />
+            <div>
+              <h4>তারেক মনোয়ার সানিয়াত</h4>
+              <p class="role">প্রতিষ্ঠাতা ও প্রেসিডেন্ট</p>
+              <p class="quote">"বিজ্ঞানের জ্ঞানই হলো মানবতার সবচেয়ে বড় সম্পদ।"</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <h3>৫০০+</h3>
+            <p>সক্রিয় সদস্য</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-medal"></i>
+            <h3>১২০+</h3>
+            <p>অলিম্পিয়াড অংশগ্রহণ</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-book-open"></i>
+            <h3>৮০+</h3>
+            <p>প্রকাশনা ও গবেষণা</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>৪৫+</h3>
+            <p>সফল প্রজেক্ট</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">গ্যালারি</h2>
+      <p class="section-subtitle">আমাদের কার্যক্রম, ইভেন্ট ও সাফল্যের কিছু মুহূর্ত</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Dynamically filled or static -->
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-flask"></i>
+            <p>বিজ্ঞান মেলা ২০২৫</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-atom"></i>
+            <p>অলিম্পিয়াড প্রস্তুতি ক্যাম্প</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-rocket"></i>
+            <p>প্রজেক্ট প্রদর্শনী</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-users"></i>
+            <p>সদস্য সভা</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-trophy"></i>
+            <p>জাতীয় বিজ্ঞান অলিম্পিয়াড</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas fa-microscope"></i>
+            <p>ল্যাব ওয়ার্কশপ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">প্রকাশনা ও অর্জন</h2>
+      <div class="publications-grid">
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>বাংলাদেশ বিজ্ঞান অলিম্পিয়াড গাইড</h3>
+          <p>পদার্থবিজ্ঞান, রসায়ন ও জীববিজ্ঞান অলিম্পিয়াডের জন্য সম্পূর্ণ প্রস্তুতি নির্দেশিকা।</p>
+          <span class="pub-date">জানুয়ারি ২০২৫</span>
+        </article>
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-flask"></i></div>
+          <h3>প্রজেক্ট বেসড লার্নিং হ্যান্ডবুক</h3>
+          <p>স্কুল ও কলেজ পর্যায়ের শিক্ষার্থীদের জন্য হাতে-কলমে প্রজেক্ট নির্মাণ গাইড।</p>
+          <span class="pub-date">মার্চ ২০২৫</span>
+        </article>
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-dna"></i></div>
+          <h3>আধুনিক জীববিজ্ঞান গবেষণা সংকলন</h3>
+          <p>জেনেটিক্স, বায়োটেকনোলজি ও পরিবেশ বিজ্ঞান নিয়ে নির্বাচিত গবেষণাপত্র।</p>
+          <span class="pub-date">জুন ২০২৫</span>
+        </article>
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-satellite"></i></div>
+          <h3>মহাকাশ ও অ্যাস্ট্রোফিজিক্স পরিচিতি</h3>
+          <p>শিক্ষার্থীদের জন্য সহজ ভাষায় মহাকাশ বিজ্ঞানের মৌলিক ধারণা ও প্রজেক্ট আইডিয়া।</p>
+          <span class="pub-date">আগস্ট ২০২৫</span>
+        </article>
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-award"></i></div>
+          <h3>জাতীয় বিজ্ঞান অলিম্পিয়াড ২০২৫ – স্বর্ণপদক</h3>
+          <p>আমাদের সদস্যরা জাতীয় পর্যায়ে একাধিক স্বর্ণ ও রৌপ্য পদক অর্জন করেছে।</p>
+          <span class="pub-date">অর্জন</span>
+        </article>
+        <article class="pub-card">
+          <div class="pub-icon"><i class="fas fa-globe"></i></div>
+          <h3>আন্তর্জাতিক সায়েন্স ফেয়ার অংশগ্রহণ</h3>
+          <p>তিনটি প্রজেক্ট আন্তর্জাতিক বিজ্ঞান মেলায় প্রদর্শিত হয়েছে।</p>
+          <span class="pub-date">অর্জন</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices Section -->
+  <section id="notices" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">নোটিশ বোর্ড</h2>
+      <div class="notices-list" id="noticesList">
+        <div class="notice-item important">
+          <div class="notice-date">
+            <span class="day">২৮</span>
+            <span class="month">সেপ্ট</span>
+          </div>
+          <div class="notice-content">
+            <h3><i class="fas fa-bullhorn"></i> জাতীয় বিজ্ঞান অলিম্পিয়াড ২০২৬ – নিবন্ধন শুরু</h3>
+            <p>জাতীয় বিজ্ঞান অলিম্পিয়াড ২০২৬-এর নিবন্ধন শুরু হয়েছে। শেষ তারিখ: ৩০ নভেম্বর ২০২৫। সদস্যরা লগইন করে আবেদন করতে পারবেন।</p>
+          </div>
+        </div>
+        <div class="notice-item">
+          <div class="notice-date">
+            <span class="day">১৫</span>
+            <span class="month">সেপ্ট</span>
+          </div>
+          <div class="notice-content">
+            <h3><i class="fas fa-calendar-alt"></i> প্রজেক্ট সাবমিশন ডেডলাইন</h3>
+            <p>বার্ষিক প্রজেক্ট প্রদর্শনীর জন্য প্রজেক্ট সাবমিট করার শেষ তারিখ ১০ অক্টোবর ২০২৫।</p>
+          </div>
+        </div>
+        <div class="notice-item">
+          <div class="notice-date">
+            <span class="day">০৫</span>
+            <span class="month">সেপ্ট</span>
+          </div>
+          <div class="notice-content">
+            <h3><i class="fas fa-chalkboard-teacher"></i> অনলাইন ওয়ার্কশপ: AI in Science</h3>
+            <p>১২ অক্টোবর সন্ধ্যা ৭টায় "AI in Scientific Research" বিষয়ে অনলাইন ওয়ার্কশপ অনুষ্ঠিত হবে।</p>
+          </div>
+        </div>
+        <div class="notice-item">
+          <div class="notice-date">
+            <span class="day">২০</span>
+            <span class="month">আগস্ট</span>
+          </div>
+          <div class="notice-content">
+            <h3><i class="fas fa-user-plus"></i> নতুন সদস্য নিবন্ধন খোলা</h3>
+            <p>Tarek Monwar's Science World-এ নতুন সদস্য নিবন্ধন চলছে। সাইন আপ করে যোগ দিন।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Assistant Section -->
+  <section id="ai" class="section">
+    <div class="container">
+      <h2 class="section-title">AI বিজ্ঞান সহায়ক</h2>
+      <p class="section-subtitle">বিজ্ঞান অলিম্পিয়াড, প্রজেক্ট আইডিয়া, গবেষণা প্রশ্ন — যেকোনো প্রশ্ন করুন</p>
+      
+      <div class="ai-container">
+        <div class="ai-sidebar">
+          <h4><i class="fas fa-lightbulb"></i> দ্রুত প্রশ্ন</h4>
+          <button class="quick-q" data-q="পদার্থবিজ্ঞান অলিম্পিয়াডের জন্য কোন কোন টপিক গুরুত্বপূর্ণ?">পদার্থবিজ্ঞান অলিম্পিয়াড টপিক</button>
+          <button class="quick-q" data-q="একটি সহজ বিজ্ঞান প্রজেক্ট আইডিয়া দাও যা স্কুলে দেখানো যায়">প্রজেক্ট আইডিয়া</button>
+          <button class="quick-q" data-q="নিউটনের তৃতীয় সূত্র ব্যাখ্যা করো উদাহরণসহ">নিউটনের সূত্র</button>
+          <button class="quick-q" data-q="DNA এবং RNA এর মধ্যে পার্থক্য কী?">DNA vs RNA</button>
+          <button class="quick-q" data-q="বাংলাদেশে আগামী বিজ্ঞান অলিম্পিয়াড কবে?">অলিম্পিয়াড তথ্য</button>
+          <div class="gemini-note">
+            <i class="fas fa-info-circle"></i>
+            <p>এই AI সিমুলেটেড। বাস্তবে Gemini API কী যোগ করে উন্নত করা যাবে।</p>
+          </div>
+        </div>
+        <div class="ai-chat">
+          <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+              <div class="msg-avatar"><i class="fas fa-robot"></i></div>
+              <div class="msg-content">
+                <p>স্বাগতম! আমি Tarek Monwar's Science World-এর AI সহায়ক। বিজ্ঞান, অলিম্পিয়াড, প্রজেক্ট বা গবেষণা সম্পর্কিত যেকোনো প্রশ্ন করুন।</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="আপনার প্রশ্ন লিখুন..." autocomplete="off" />
+            <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">বিজ্ঞান কুইজ</h2>
+      <p class="section-subtitle">জ্ঞান পরীক্ষা করুন এবং লিডারবোর্ডে জায়গা করে নিন</p>
+      
+      <div class="quiz-container" id="quizContainer">
+        <div class="quiz-start" id="quizStart">
+          <i class="fas fa-brain fa-4x"></i>
+          <h3>সাধারণ বিজ্ঞান কুইজ</h3>
+          <p>১০টি প্রশ্ন • প্রতিটি সঠিক উত্তরে ১০ পয়েন্ট</p>
+          <button class="btn-primary" id="startQuizBtn">কুইজ শুরু করুন</button>
+        </div>
+        
+        <div class="quiz-body hidden" id="quizBody">
+          <div class="quiz-progress">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span id="questionCounter">প্রশ্ন ১/১০</span>
+          </div>
+          <div class="question-card">
+            <h3 id="questionText">প্রশ্ন এখানে আসবে</h3>
+            <div class="options" id="optionsContainer"></div>
+          </div>
+          <button class="btn-primary hidden" id="nextBtn">পরবর্তী</button>
+        </div>
+        
+        <div class="quiz-result hidden" id="quizResult">
+          <i class="fas fa-trophy fa-4x"></i>
+          <h3>কুইজ সম্পন্ন!</h3>
+          <p class="score-text">আপনার স্কোর: <span id="finalScore">0</span>/১০০</p>
+          <p id="scoreMessage"></p>
+          <button class="btn-primary" id="restartQuizBtn">আবার খেলুন</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">যোগাযোগ</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Tarek Monwar's Science World Foundation</h3>
+          <p><i class="fas fa-user-tie"></i> প্রতিষ্ঠাতা ও প্রেসিডেন্ট: <strong>তারেক মনোয়ার সানিয়াত</strong></p>
+          <p><i class="fas fa-envelope"></i> Email: contact@tarekmonwarscienceworld.org</p>
+          <p><i class="fas fa-globe"></i> Website: tarekmonwarscienceworld.org</p>
+          <p><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/1KNL9ocsas/" target="_blank" rel="noopener noreferrer" title="Facebook Page"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="আপনার নাম" required />
+          <input type="email" placeholder="ইমেইল" required />
+          <textarea placeholder="বার্তা লিখুন..." rows="4" required></textarea>
+          <button type="submit" class="btn-primary">পাঠান</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <img src="images/logo.png" alt="Logo" class="footer-logo" />
+        <p>© ২০২৫ Tarek Monwar's Science World Foundation. সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="founder-note">প্রতিষ্ঠাতা ও প্রেসিডেন্ট: তারেক মনোয়ার সানিয়াত</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div class="modal" id="authModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login">লগইন</button>
+        <button class="auth-tab" data-tab="signup">সাইন আপ</button>
+      </div>
+      
+      <form id="loginForm" class="auth-form">
+        <h3>সদস্য লগইন</h3>
+        <input type="email" id="loginEmail" placeholder="ইমেইল" required />
+        <input type="password" id="loginPassword" placeholder="পাসওয়ার্ড" required />
+        <button type="submit" class="btn-primary">লগইন</button>
+        <p class="auth-note">ডেমো: যেকোনো ইমেইল ও পাসওয়ার্ড দিয়ে লগইন করা যাবে</p>
+      </form>
+      
+      <form id="signupForm" class="auth-form hidden">
+        <h3>নতুন সদস্য নিবন্ধন</h3>
+        <input type="text" id="signupName" placeholder="পূর্ণ নাম" required />
+        <input type="email" id="signupEmail" placeholder="ইমেইল" required />
+        <input type="password" id="signupPassword" placeholder="পাসওয়ার্ড (কমপক্ষে ৬ অক্ষর)" required minlength="6" />
+        <button type="submit" class="btn-primary">সাইন আপ</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
